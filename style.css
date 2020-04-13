@@ -1,5 +1,6 @@
 body {
   font-family: "Lato", Trebuchet MS;
+  background-color: #36393F;
 }
 
 .sidenav {
@@ -71,8 +72,13 @@ body {
   font-size: 20px;
   color: #8A8E93;
   display: block;
-    }
-    .sidenav p {
+}
+
+.sidenav a:first-of-type {
+  margin-block-start: 0.5em;
+}
+
+.sidenav p {
   padding: 6px 8px 6px 16px;
   text-decoration: none;
   font-size: 20px;
@@ -95,13 +101,11 @@ body {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
 }
-    html {
+
+html {
   scroll-behavior: smooth;
 }
-.center>img{
-  display: block;
-  margin-left: 47%;
-}
+
 a { 
     color: #6F84D1;
 }
