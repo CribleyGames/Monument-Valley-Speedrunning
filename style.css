@@ -109,3 +109,24 @@ html {
 a { 
     color: #6F84D1;
 }
+
+img {
+  animation-duration: 1s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-top: 100%;
+    width: 200px; 
+  }
+
+  to {
+    margin-top: 0%;
+    width: 200px;
+  }
+}
+@keyframes fadeOut {
+   0% {opacity: 1;}
+   100% {opacity: 0;} 
+} 
