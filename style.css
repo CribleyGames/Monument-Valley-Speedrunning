@@ -125,8 +125,3 @@ img {
     margin-top: 0%;
     width: 200px;
   }
-}
-@keyframes fadeOut {
-   0% {opacity: 1;}
-   100% {opacity: 0;} 
-} 
