@@ -42,7 +42,7 @@ body {
   color: #DCDDDE;
 }
 
-@media screen and (max-height: 450px) {
+@media screen and (max-height: 1920px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
 }
@@ -97,7 +97,7 @@ body {
   color: #DCDDDE;
 }
 
-@media screen and (max-height: 450px) {
+@media screen and (max-height: 1290px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
 }
