@@ -117,7 +117,7 @@ img {
 
 @keyframes slidein {
   from {
-    margin-top: 67%;
+    margin-top: 100%;
     width: 200px; 
   }
 
