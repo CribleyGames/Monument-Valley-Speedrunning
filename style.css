@@ -111,13 +111,13 @@ a {
 }
 
 img {
-  animation-duration: 1s;
+  animation-duration: 3s;
   animation-name: slidein;
 }
 
 @keyframes slidein {
   from {
-    margin-top: 100%;
+    margin-top: 67%;
     width: 200px; 
   }
 
