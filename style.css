@@ -42,7 +42,7 @@ body {
   color: #DCDDDE;
 }
 
-@media screen and (max-height: 1920px) {
+@media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
 }
@@ -97,7 +97,7 @@ body {
   color: #DCDDDE;
 }
 
-@media screen and (max-height: 1290px) {
+@media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
 }
@@ -111,7 +111,7 @@ a {
 }
 
 img {
-  animation-duration: 3s;
+  animation-duration: 1s;
   animation-name: slidein;
 }
 
@@ -125,4 +125,4 @@ img {
     margin-top: 0%;
     width: 200px;
   }
-}
+} 
