@@ -50,9 +50,6 @@ body {
 html {
   scroll-behavior: smooth;
 }
-body {
-  font-family: "Lato", Trebuchet MS;
-}
 
 .sidenav {
   height: 100%;
@@ -66,15 +63,19 @@ body {
   padding-top:0px;
 }
 
-.sidenav a {
+.sidenav :not(hr) {
   padding: 6px 8px 6px 16px;
   text-decoration: none;
   font-size: 20px;
-  color: #8A8E93;
   display: block;
+  color: #fff;
 }
 
-.sidenav a:first-of-type {
+.sidenav a {
+	color: #8A8E93;
+}
+
+.sidenav :first-child {
   margin-block-start: 0.5em;
 }
 
