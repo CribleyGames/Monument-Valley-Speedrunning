@@ -6,20 +6,12 @@ button.collapsible {
     background-color: #3ba666;
     color: white;
     cursor: pointer;
-    padding: 18px;
-    width: 100%;
+	padding: 18px;
+	width: 100%;
     border: none;
     text-align: left;
-    outline: none;
     font-size: 20px;
-    font-family: "Lato", Helvetica, sans-serif;
     font-weight: 300;
-}
-
-button.collapsible.alt {
-    background-color: transparent;
-    box-shadow: inset 0 0 0 2px rgba(144, 144, 144, 0.25);
-    color: #666;
 }
 
 button.collapsible:focus {
@@ -27,21 +19,9 @@ button.collapsible:focus {
     outline: 2px solid #228b22;
 }
 
-button.collapsible.alt:focus {
-    outline: 2px solid #666;
-}
-
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 button.active, button.collapsible:hover {
     background-color: #42b972;
-}
-
-button.collapsible.alt:active {
-    background-color: rgba(144, 144, 144, 0.2);
-}
-
-button.collapsible.alt:hover {
-    background-color: rgba(144, 144, 144, 0.075);
 }
 
 /* Style the collapsible content. Note: hidden by default */
@@ -52,22 +32,6 @@ button.collapsible.alt:hover {
     transition: max-height 0.2s ease-out;
 }
 
-.collapse-content-g {
-    padding: 0 18px;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.2s ease-out;
-    border: 3px solid #42b972;
-}
-
-.collapse-content-alt {
-    padding: 0 18px;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.2s ease-out;
-    border: 3px solid #DDD;
-}
-
 button.collapsible:after {
     content: '\002B';
     color: white;
@@ -76,14 +40,6 @@ button.collapsible:after {
     margin-left: 5px;
 }
 
-button.collapsible.alt:after {
-    color: #666;
-}
-
 button.active:after {
     content: "\2212";
-}
-
-.white-text {
-   	color: white;
 }
