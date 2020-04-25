@@ -95,3 +95,19 @@ img {
 	background-color: #464953;
 	font-size: 15px;
 }
+
+.sidenav .collapse-content :not(:last-child) {
+	margin-bottom: 7px;
+}
+
+.sidenav .collapse-content>a {
+	color: #adb0b3;
+}
+
+.sidenav .collapse-content>* {
+	display: block;
+}
+
+.sidenav .collapse-content>a:hover {
+	color: #f1f1f1;
+}

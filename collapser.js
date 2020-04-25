@@ -23,3 +23,8 @@ for (let idx = 0; idx < coll.length; idx++) {
 		return false;
 	});
 }
+
+for(const toExpand of document.querySelectorAll(".collapse-content.expanded")) {
+	toExpand.style.maxHeight = toExpand.scrollHeight + "px";
+	toExpand.classList.toggle("expanded");
+}
