@@ -1,14 +1,15 @@
 /* Ctrl + C, Ctrl + V from W3SCHOOLS
 From here: https://www.w3schools.com/howto/howto_js_collapsible.asp */
 
-var coll = document.getElementsByClassName("collapsible");
-let idx;
-var content;
+var coll = document.getElementsByClassName("collapsible"), 
+		contents = document.getElementsByClassName("collapse-content");
 
-for (idx = 0; idx < coll.length; idx++) {
-    coll[idx].addEventListener("click", function() {
+for (let idx = 0; idx < coll.length; idx++) {
+	const ii = idx;
+    coll[ii].addEventListener("click", function() {
+		console.log("clicked " + ii);
 		this.classList.toggle("active");
-		content = this.nextElementSibling;
+		var content = contents[ii];
 		if (content.style.maxHeight){
 			content.style.maxHeight = null;
 			setTimeout(function() {

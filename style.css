@@ -87,3 +87,11 @@ img {
 	align-items: center;
 	justify-content: space-between;
 }
+
+.sidenav .collapse-content {
+	padding: 5px 0 5px 5px;
+	margin-left: 5px;
+	margin-top: 5px;
+	background-color: #464953;
+	font-size: 15px;
+}

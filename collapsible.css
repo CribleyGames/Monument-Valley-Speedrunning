@@ -3,7 +3,7 @@ From here: https://www.w3schools.com/howto/howto_js_collapsible.asp */
 
 /* Style the button that is used to open and close the collapsible content */
 button.collapsible {
-    background-color: #3ba666;
+    background-color: #00a88d;
     color: white;
     cursor: pointer;
 	padding: 18px;
@@ -16,12 +16,12 @@ button.collapsible {
 
 button.collapsible:focus {
     outline-offset: -2px;
-    outline: 2px solid #228b22;
+    outline: 2px solid #008280;
 }
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 button.active, button.collapsible:hover {
-    background-color: #42b972;
+    background-color: #00c496;
 }
 
 /* Style the collapsible content. Note: hidden by default */
