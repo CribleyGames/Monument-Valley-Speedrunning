@@ -1,19 +1,38 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Monument Valley Speedrunning: Guides</title>
-        <link rel='stylesheet' href='style.css'>
-        <link rel="shortcut icon" type="image/png" href="image.png"/>
-    </head>
+<head>
+	<title>Monument Valley Speedrunning: Guides</title>
+	<link rel='stylesheet' href='style.css'>
+	<link rel='stylesheet' href='collapsible.css'>
+	<link rel="shortcut icon" type="image/png" href="image.png"/>
+</head>
 <body>
     <div class="sidenav">
         <a href="index.html" title="Home">Home</a>
         <hr>
         <a href="downloads.html" title="Downloads & Notes">Downloads & Notes</a>
         <hr>
-        <b>Guides</b>
+		<div>
+			<div class="vert-center">
+				<b>Guides</b>
+				<button class="collapsible active"></button>
+			</div>
+			<div class="collapse-content expanded">
+				<a href="idasdream.html" title="Ida's Dream (DLC) Guide (Video)">Ida's Dream (DLC) Guide (Video)</a>
+				<a href="strats.html" title="Known skips and strategies">Known skips and strategies</a>
+				<a href="maingame.html" title="Main Game Guide (Video)">Main Game Guide (Video)</a>
+			</div>
+		</div>
         <hr>
-        <a href="resources.html" title="Resources">Resources</a>
+        <div>
+			<div class="vert-center">
+				<a href="resources.html" title="Resources">Resources</a>
+				<button class="collapsible"></button>
+			</div>
+			<div class="collapse-content" style="display:none">
+				<a href="https://github.com/Slush0Puppy/retime">Slush0Puppy's retime tool</a>
+			</div>
+		</div>
     </div>
 	<div class="main">
 		<div style="text-align:center">
@@ -31,4 +50,6 @@
 			<a style="margin-left:2em" href="https://discord.gg/BwjvzPZ" target="blank">Community Discord</a>
 		</p>
 	</div>
+	<script src="collapser.js" async defer></script>
 </body>
+</html>

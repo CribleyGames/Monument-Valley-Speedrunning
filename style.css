@@ -12,79 +12,13 @@ body {
   left: 0;
   background-color: #2B2D33;
   overflow-x: hidden;
-  padding-top:0px;
-}
-
-.sidenav a {
-  padding: 6px 8px 6px 16px;
-  text-decoration: none;
-  font-size: 20px;
-  color: #8A8E93;
-  display: block;
-}
-
-.sidenav p {
-  padding: 6px 8px 6px 16px;
-  text-decoration: none;
-  font-size: 20px;
-  color: #8A8E93;
-  display: block;
-}
-
-.sidenav a:hover {
-  color: #f1f1f1;
-}
-
-.main {
-  margin-left: 160px;
-  font-size: 20px;
-  padding: 0px 10px;
-  color: #DCDDDE;
-}
-
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-.sidenav {
-  height: 100%;
-  width: 160px;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: #2B2D33;
-  overflow-x: hidden;
-  padding-top:0px;
-}
-
-.sidenav :not(hr) {
-  padding: 6px 8px 6px 16px;
-  text-decoration: none;
-  font-size: 20px;
-  display: block;
+  padding-top: 0px;
   color: #fff;
 }
 
 .sidenav a {
-	color: #8A8E93;
-}
-
-.sidenav :first-child {
-  margin-block-start: 0.5em;
-}
-
-.sidenav p {
-  padding: 6px 8px 6px 16px;
   text-decoration: none;
-  font-size: 20px;
   color: #8A8E93;
-  display: block;
 }
 
 .sidenav a:hover {
@@ -105,6 +39,17 @@ html {
 
 html {
   scroll-behavior: smooth;
+}
+
+.sidenav>:not(hr) {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  display: block;
+}
+
+.sidenav>:first-child {
+  margin-block-start: 0.5em;
 }
 
 a { 
@@ -126,4 +71,43 @@ img {
     margin-top: 0%;
     width: 200px;
   }
-} 
+}
+
+.sidenav button.collapsible {
+	padding: 1px 6px;
+	width: initial;
+}
+
+.sidenav button.collapsible:after {
+	margin: 0;
+}
+
+.vert-center {
+	display: flex !important;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.sidenav .collapse-content {
+	padding: 5px 0 5px 5px;
+	margin-left: 5px;
+	margin-top: 5px;
+	background-color: #464953;
+	font-size: 15px;
+}
+
+.sidenav .collapse-content :not(:last-child) {
+	margin-bottom: 7px;
+}
+
+.sidenav .collapse-content>a {
+	color: #adb0b3;
+}
+
+.sidenav .collapse-content>* {
+	display: block;
+}
+
+.sidenav .collapse-content>a:hover {
+	color: #f1f1f1;
+}
