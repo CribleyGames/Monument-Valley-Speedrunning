@@ -1,15 +1,15 @@
-var coll = document.getElementsByClassName("collapsible"), 
-		contents = document.getElementsByClassName("collapse-content");
+var coll = document.getElementsByClassName("collapsible"),
+	contents = document.getElementsByClassName("collapse-content");
 
 for (let idx = 0; idx < coll.length; idx++) {
 	const ii = idx;
-    coll[ii].addEventListener("click", function() {
+	coll[ii].addEventListener("click", function () {
 		console.log("clicked " + ii);
 		this.classList.toggle("active");
 		var content = contents[ii];
-		if (content.style.maxHeight){
+		if (content.style.maxHeight) {
 			content.style.maxHeight = null;
-			setTimeout(function() {
+			setTimeout(function () {
 				content.style.display = "none";
 			}, 200);
 		} else {
@@ -21,7 +21,7 @@ for (let idx = 0; idx < coll.length; idx++) {
 	});
 }
 
-for(const toExpand of document.querySelectorAll(".collapse-content.expanded")) {
+for (const toExpand of document.querySelectorAll(".collapse-content.expanded")) {
 	toExpand.style.maxHeight = toExpand.scrollHeight + "px";
 	toExpand.classList.toggle("expanded");
 }
